@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Квест Кімнати Київ</title>
+    <style>
+        /* Глобальні стилі */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Фонове зображення */
+        body {
+            background: url('https://example.com/purple-neon-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Затемнення фону */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(25, 0, 51, 0.8);
+            z-index: -1;
+        }
+
+        /* Шапка */
+        header {
+            background: rgba(255, 20, 147, 0.9);
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00FFFF;
+            text-shadow: 0 0 10px #00FFFF;
+        }
+
+        /* Логотип */
+        .logo {
+            max-width: 120px;
+            margin-right: 15px;
+        }
+
+        /* Контейнер */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Картки квестів */
+        .quest {
+            background: rgba(50, 0, 100, 0.9);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 20, 147, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .quest:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.7);
+        }
+
+        .quest img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #00FFFF;
+            text-shadow: 0 0 10px #00FFFF;
+            margin-bottom: 10px;
+        }
+
+        /* Кнопки */
+        .button {
+            background: #FF1493;
+            color: #000;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px #FF1493;
+        }
+
+        .button:hover {
+            background: #FF69B4;
+            box-shadow: 0 0 15px #FF69B4;
+        }
+
+        /* Таблиця */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: rgba(50, 0, 100, 0.9);
+            color: #ffffff;
+        }
+
+        table, th, td {
+            border: 1px solid #FF1493;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Форма відгуків */
+        .feedback {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(50, 0, 100, 0.9);
+            border-radius: 10px;
+        }
+
+        .feedback input, .feedback textarea, .feedback select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .feedback button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+       <img src=https://st4.depositphotos.com/5777490/24632/v/450/depositphotos_246327472-stock-illustration-quest-room-neon-sign-bright.jpg alt="LOL" width="170" height="100">
+    Квест Кімнати Київ
+    </header>
+
+    <div class="container">
+
+        <h1>Популярні Квест Кімнати</h1>
+
+        <div class="quest">
+            <h2>"Жахіття студентів"</h2>
+            <p>Захоплива квест-кімната, яка перенесе вас у світ камер страху та таємниць...</p>
+            <a href="#" class="button">Забронювати</a>
+        </div>
+
+        <div class="quest">
+            <h2>"5 пар"</h2>
+            <p>У квесті "5 пар" вас очікує п'ять захоплюючих головоломок, які вам необхідно вирішити, щоб знайти вихід із кімнати...</p>
+            <a href="#" class="button">Забронювати</a>
+        </div>
+
+        <h2>Прайс-лист</h2>
+        <table>
+            <tr>
+                <th>Назва</th>
+                <th>Ціна</th>
+                <th>Кількість гравців</th>
+                <th>Формат</th>
+            </tr>
+            <tr>
+                <td>"Виберись з КНУТД"</td>
+                <td>1500 грн</td>
+                <td>5-30 осіб</td>
+                <td>З акторами</td>
+            </tr>
+            <tr>
+                <td>"24 години зарубіжної літератури"</td>
+                <td>1200 грн</td>
+                <td>2-30 осіб</td>
+                <td>З акторами</td>
+            </tr>
+            <tr>
+                <td>"Жахіття студентів"</td>
+                <td>1000 грн</td>
+                <td>10-30 осіб</td>
+                <td>Без акторів</td>
+            </tr>
+            <tr>
+                <td>"5 пар"</td>
+                <td>1200 грн</td>
+                <td>2-6 осіб</td>
+                <td>Без акторів</td>
+            </tr>
+        </table>
+
+        <h2>Наше розташування</h2>
+        <iframe src="https://www.google.com/maps/embed?..." width="300" height="250" style="border:0;" allowfullscreen></iframe>
+
+        <h2>Запрошуємо до команди!</h2>
+        <p>Якщо ви любите атмосферу квест-кімнат, ми будемо раді бачити вас у нашій команді!</p>
+
+        <h2>Наш YouTube</h2>
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/vBynw9Isr28"></iframe>
+
+        <h2>Фонова музика</h2>
+        <audio src="https://assets.onecompiler.app/437a2brua/437a2xkk8/Britney%20Spears%20-%20Circus.mp3" controls></audio>
+
+        <h2>Залишити відгук</h2>
+        <div class="feedback">
+            <form>
+                <input type="text" placeholder="Ваше ім'я" required>
+                <textarea placeholder="Ваш відгук" rows="4" required></textarea>
+                <button class="button" type="submit">Надіслати</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
